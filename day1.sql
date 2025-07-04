@@ -162,3 +162,33 @@ Create a new table called persons with columns:id, person_name, birth_date, phon
 -- FROM 
 -- persons
 
+-- DML(Data Manipulation Language) -- they manipulate/manipulate the data
+-- -> insert
+-- -> update
+-- -> delete   
+
+-- INSERT 
+-- INTO
+-- customers (id, first_name, country, score)
+-- values (6, 'surya', 'India', 865), (7, 'suraj', 'India', NULL);
+
+-- INSERT INTO customers values(8,'anuj', 'India', NULL);    --we can skip this (xxxxxxxxxxxxxxxxxxx)
+
+-- SELECT
+-- * 
+-- FROM
+-- customers
+
+-- we can use the insert to insert the data from one table to another 
+
+INSERT INTO persons(id, person_name, birth_date, email)
+SELECT
+id, first_name, NULL, 'pending'
+FROM
+customers
+
+SELECT
+* 
+FROM
+persons
+
