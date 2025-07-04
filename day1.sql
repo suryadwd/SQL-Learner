@@ -71,18 +71,42 @@ Find the average score for each country considering only customers with a score 
 and return the country and the average score greater then 430.
 */
 
-USE MyDatabase;
+-- USE MyDatabase;
+
+-- SELECT
+-- country,
+-- AVG(score) as average_score
+-- FROM 
+-- customers
+-- where score != 0
+-- GROUP BY country
+-- HAVING AVG(score) > 430;
+
+
+-- DISTINCT keyword is use to return only the unique values in the result
+
+-- SELECT
+-- DISTINCT
+-- country
+-- FROM
+-- customers
+
+
+-- TOP control the number of  rows to be returned
+
+-- 
+
+/*
+Retrive top 3 highest scores country
+*/
 
 SELECT
-country,
-AVG(score) as average_score
-FROM 
+TOP 3
+*
+FROM
 customers
-where score != 0
-GROUP BY country
-HAVING AVG(score) > 430;
-
-
+ORDER BY
+score DESC;
 
 
 
