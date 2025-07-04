@@ -97,16 +97,34 @@ and return the country and the average score greater then 430.
 -- 
 
 /*
-Retrive top 3 highest scores country
+Retrive top 3 highest scores country && lowest two 
 */
 
-SELECT
-TOP 3
-*
-FROM
-customers
-ORDER BY
-score DESC;
+-- SELECT
+-- TOP 3
+-- *
+-- FROM
+-- customers
+-- ORDER BY
+-- score DESC;
 
+-- SELECT 
+-- TOP 2
+-- *
+-- FROM
+-- customers
+-- ORDER BY
+-- score
 
+-- both below quesry when hit run will executes but if we select any one and hit run only the selected will run
+
+-- SELECT
+-- * 
+-- FROM
+-- customers
+
+-- SELECT
+-- * 
+-- FROM
+-- orders
 
