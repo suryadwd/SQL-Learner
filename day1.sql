@@ -56,8 +56,6 @@ FROM
 customers
 GROUP BY country
 
-*/
-
 SELECT 
 country,
 count(country) AS customer,
@@ -66,11 +64,23 @@ FROM
 customers
 GROUP BY country
 HAVING sum(score) > 800;
+*/
 
+/*
+Find the average score for each country considering only customers with a score not equal to 0.
+and return the country and the average score greater then 430.
+*/
 
+USE MyDatabase;
 
-
-
+SELECT
+country,
+AVG(score) as average_score
+FROM 
+customers
+where score != 0
+GROUP BY country
+HAVING AVG(score) > 430;
 
 
 
