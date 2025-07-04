@@ -128,3 +128,37 @@ Retrive top 3 highest scores country && lowest two
 -- FROM
 -- orders
 
+
+-- DDL(Data Defination Language) -- they defines the structure 
+
+-- -> create
+-- -> alter
+-- -> drop
+
+/*
+Create a new table called persons with columns:id, person_name, birth_date, phone
+*/
+
+-- CREATE
+-- TABLE persons (
+--   id INT NOT NULL,
+--   person_name VARCHAR(50) NOT NULL,
+--   birth_date DATE,
+--   phone VARCHAR(15) NOT NULL,
+--   CONSTRAINT pk_persons_table PRIMARY KEY (id)
+-- )
+
+-- ALTER TABLE persons 
+-- ADD email VARCHAR(50) NOT NULL
+
+-- ALTER TABLE persons
+-- DROP column phone
+
+-- ALTER to make changes in table add new colums, remove
+-- DROP TABLE persons to remove the table completly
+
+-- SELECT
+-- *
+-- FROM 
+-- persons
+
